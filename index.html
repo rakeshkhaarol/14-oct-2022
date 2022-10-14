@@ -1,0 +1,105 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>Document</title>
+        <link rel="stylesheet" href="./css/main.css">
+        <style>
+             /*state 1*/
+            #main{
+                width: 500px;
+                height: 500px;
+                background: blue;
+                /*margin: T/B L/R*/
+                margin: 100px auto;
+                position: relative;
+            }
+            /*comman class*/
+            #main .a{
+                width: 250px;
+                height: 250px;  
+                transform: rotate(0deg);
+                transition: all 5s linear;
+                display: inline-block;
+            
+            
+            }
+             /*state 2*/
+            #main:hover .a{
+                transform: rotate(360deg);
+                
+            }
+             /* Decedent Selector
+		
+		        Syntax
+		           parent child{
+			
+	         	}
+	         */
+            #main .c1{
+            
+                background: cadetblue;
+                transform-origin: left top;
+            
+            }
+            [data-c2="c2"]{
+                background: blueviolet;
+                transform-origin: left bottom;
+                position: absolute;
+                bottom: 0px;
+                left: 0px;
+
+            }
+            .c3{
+                background: brown;
+                position: absolute;
+                top: 0px;
+                right: 0px;
+                transform-origin: right top;
+            }
+            .c4{
+                background: chocolate;
+                position: absolute;
+                transform-origin: right bottom;
+                right: 0px;
+                bottom: 0px;
+            }
+                
+        </style>
+    </head>
+    <body>
+        <div id="main">
+            <div class="c1 a">
+                <div class="r1 aa"></div>
+                <div class="r2 aa"></div>
+                <div class="r3 aa"></div>
+                <div class="r4 aa"></div>
+             </div>
+            
+            <div data-c2="c2" class="a">
+                <div class="r1 aa"></div>
+                <div class="r2 aa"></div>
+                <div class="r3 aa"></div>
+                <div class="r4 aa"></div>
+            </div>
+            
+            <div class="c3 a">
+                <div class="r11 aa"></div>
+                <div class="r22 aa"></div>
+                <div class="r33 aa"></div>
+                <div class="r44 aa"></div>
+            </div>
+            
+            <div class="c4 a">
+                <div class="r11 aa"></div>
+                <div class="r22 aa"></div>
+                <div class="r33 aa"></div>
+                <div class="r44 aa"></div>
+            </div>
+            
+        </div>
+    
+    </body>
+</html>

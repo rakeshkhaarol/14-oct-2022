@@ -1,0 +1,50 @@
+.aa{
+    width: 55px;
+    height: 55px;
+    animation: r 1s ease-in 0s alternate infinite;
+    display: inline-block;
+   
+  
+   
+   
+}
+@keyframes r {
+    from{
+        transform: translate(0px,0px);
+    }
+    to{
+        transform: translate(0px,200px)
+    }
+}
+.r1{
+    background: cyan;
+    animation-delay: 0.2s;
+}
+.r2{
+    background: deeppink;
+    animation-delay: 0.4s;
+}
+.r3{
+    background: darkgreen;
+    animation-delay: 0.6s;
+}
+.r4{
+    background: indigo;
+    animation-delay: 0.8s;
+}
+.r11{
+    background: lime;
+    animation-delay: 1.0s;
+}
+.r22{
+    background: tomato;
+    animation-delay: 1.2s;
+}
+.r33{
+    background: darkslategrey;
+    animation-delay: 1.4s;
+}
+.r44{
+    background: red;
+    animation-delay: 1.6s;
+}
